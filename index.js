@@ -154,7 +154,7 @@ async function run() {
     //   res.send({ email });
     // });
 
-    await client.db("admin").command({ ping: 1 });
+    // await client.db("admin").command({ ping: 1 });
     console.log(
       "Pinged your deployment. You successfully connected to MongoDB!"
     );
@@ -164,6 +164,7 @@ async function run() {
 }
 run().catch(console.dir);
 
-app.listen(PORT, () => {
-  console.log(`http://localhost:${PORT}`);
-});
+// app.listen(PORT, () => {
+//   console.log(`http://localhost:${PORT}`);
+// });
+module.exports = app;
